@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--[if IE]>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <![endif]-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>友好响应式开发</title>
+    <meta name="description" content="响应式网站开发"/>
+    <meta name="ketwords" content="手机APP,响应式站点,HTML5,bootstrap">
+    <link rel="icon" href="img/favicon.ico"/>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/flexslider.css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css"/>
+
+    <!--自己的css文件-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/changge.css"/>
+
+    <script src="js/modernizr.custom.12691.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!--开机加载部分-->
+    <!--<div class="preloade">
+        <div class="status">&nbsp;</div>
+    </div>-->
+    <!--导航部分-->
+    <section >
+        <nav class="navbar navigation navbar-fixed-top not-visible-nav" >
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="logo-img">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/nav-logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home" class="scroll">主页</a></li>
+                        <li><a href="#about" class="scroll">关于</a></li>
+                        <li><a href="#action" class="scroll">特点</a></li>
+                        <li><a href="#team" class="scroll">团队</a></li>
+                        <li><a href="#screenshots" class="scroll">界面</a></li>
+                        <li><a href="#">下载</a></li>
+                        <li><a href="#">联系</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!--轮播部分-->
+    <section id="home" class="banner " style="height: 750px">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="hidden-sm hidden-md hidden-lg carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <!--第一张-->
+                <div class="item active slider1">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <div class="content">
+                                    <a href="#about" class="scroll wow bounceIn"><img src="img/logo.png" alt=""/></a>
+                                    <br/>
+                                    <div class="divider-top"></div>
+                                    <h1 class="wow bounce">欢迎来到<span class="highlight">友乐APP</span></h1>
+                                    <div class="divider"></div>
+                                    <h3>最好的网页设计</h3>
+                                    <h3>专注你的手机APP</h3>
+                                    <br>
+                                    <a href="#about" class="btn btn-learn btn-learna fa fa-plus scroll wow bounceInLeft">了解更多</a>
+                                    <a href="#downloads" class="btn btn-download btn-downloada fa fa-download scroll wow bounceInRight">下载</a>
+                                    <div class="hidden-xs phone1 wow bounceInUp" data-wow-delay="0.4s"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--第二张-->
+                <div class="item  slider2">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <div class="content">
+                                    <a href="#about" class="scroll wow bounceIn"><img src="img/logo.png" alt=""/></a>
+                                    <br/>
+                                    <div class="divider-top"></div>
+                                    <h1 class="wow bounce">专注于<span class="highlight">网页设计</span></h1>
+                                    <div class="divider"></div>
+                                    <h3>最好的网页设计</h3>
+                                    <h3>专注你的手机APP</h3>
+                                    <br>
+                                    <a href="#about" class="btn btn-learn btn-learna fa fa-plus scroll wow bounceInLeft">了解更多</a>
+                                    <a href="#downloads" class="btn btn-download btn-downloada fa fa-download scroll wow bounceInRight">下载</a>
+                                    <div class="hidden-xs phone2 wow bounceInUp" data-wow-delay="0.4s"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--第三张-->
+                <div class="item  slider3">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <div class="content">
+                                    <a href="#about" class="scroll wow bounceIn"><img src="img/logo.png" alt=""/></a>
+                                    <br/>
+                                    <div class="divider-top"></div>
+                                    <h1 class="wow bounce">丰富的<span class="highlight">产品经验</span></h1>
+                                    <div class="divider"></div>
+                                    <h3>最好的网页设计</h3>
+                                    <h3>专注你的手机APP</h3>
+                                    <br>
+                                    <a href="#about" class="btn btn-learn btn-learna fa fa-plus scroll wow bounceInLeft">了解更多</a>
+                                    <a href="#downloads" class="btn btn-download btn-downloada fa fa-download scroll wow bounceInRight">下载</a>
+                                    <div class="hidden-xs phone3 wow bounceInUp" data-wow-delay="0.4s"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--第四张-->
+                <div class="item  slider4">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <div class="content">
+                                    <a href="#about" class="scroll wow bounceIn"><img src="img/logo.png" alt=""/></a>
+                                    <br/>
+                                    <div class="divider-top"></div>
+                                    <h1 class="wow bounce">响应式<span class="highlight">网页设计</span></h1>
+                                    <div class="divider"></div>
+                                    <h3>最好的网页设计</h3>
+                                    <h3>专注你的手机APP</h3>
+                                    <br>
+                                    <a href="#about" class="btn btn-learn btn-learna fa fa-plus scroll wow bounceInLeft">了解更多</a>
+                                    <a href="#downloads" class="btn btn-download btn-downloada fa fa-download scroll wow bounceInRight">下载</a>
+                                    <div class="hidden-xs phone4 wow bounceInUp" data-wow-delay="0.4s"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container aboutme">
+            <div class="col-md-12">
+                <div class="about">
+                    <h2>产品介绍<br><span>这里有你app的描述和技术</span></h2>
+                    <div class="divider add-bottom"></div>
+                </div>
+                <div class="col-md-4 col-sm-4 wow bounceIn animated" style="margin-top:-30px";>
+                    <img src="img/phones/1.png" class="img-responsive" alt=""/>
+                </div>
+                <div class="col-md-4 col-sm-4 add-top">
+                    <div class="list wow bounceIn">
+                        <img class="flat-icons" src="img/icons/cog-icons.png" alt=""/>
+                        <h5>基于Bootstrap 3.1.1框架</h5>
+                        <p>Bootstrap，来自 Twitter，是目前最受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。</p>
+
+                    </div>
+                    <div class="list wow fadeInUp" data-wow-delay="0.4s">
+                        <img class="flat-icons" src="img/icons/brush-icons.png" alt="flaticons">
+                        <h5>6 Colours Ready</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 add-top">
+                    <div class="list wow bounceIn">
+                        <img class="flat-icons" src="img/icons/pencil-icons.png" alt=""/>
+                        <h5>独特设计</h5>
+                        <p>界面美观，时尚简约，具有各种风格，代码健壮、适应性强，接口一致、模块化、高性能、后期维护方便等特性。让你的网页炫酷不能！</p>
+
+                    </div>
+                    <div class="list wow fadeInUp" data-wow-delay="0.4s">
+                        <img class="flat-icons" src="img/icons/mobile-icons.png" alt="flaticons">
+                        <h5>响应式布局</h5>
+                        <p>你的网站和应用可以通过同一份代码快速、有效适配手机、平板、PC 设备，减少开发成本</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--准备部分-->
+    <section id="action">
+        <div class="container">
+            <div class="col-md-12 center">
+                <div class="content-action wow bounce">深度专业的服务合理的价格，为您而省</div>
+                <br>
+                <h3>帮您系统地梳理需求和全面的规划功能</h3>
+                <br>
+                <h3>根据5年积累的287个案例进行经验评估
+                    靠谱你还在等什么?</h3>
+                <br>
+            </div>
+        </div>
+    </section>
+    <!--团队部分-->
+    <section id="team">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="team wow bounce add-bottom">
+                    <h2>我们的团队<span>Meet the genius people behind ForApps. Follow and socialise with the team!</span></h2>
+                    <div class="divider add-bottom"></div>
+                </div>
+
+                <ul class="teamImg">
+                    <li  class="wow fadeInRightBig grid col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:;" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                            <figure>
+                                <img src="img/team/1.png" />
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                                <figcaption>
+                                    <h2>用户UI设计师</h2>
+                                    <p>Soko radicchio bunya nuts gram dulse.</p>
+                                    <button>高瑞芳</button>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </li>
+                    <li  class=" wow fadeInUpBig grid col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:;" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                            <figure>
+                                <img src="img/team/2.png" />
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                                <figcaption>
+                                    <h2>Crystalline</h2>
+                                    <p>Soko radicchio bunya nuts gram dulse.</p>
+                                    <button>View</button>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </li>
+                    <li  class="wow fadeInLeftBig grid col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:;" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                            <figure>
+                                <img src="img/team/3.png" />
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                                <figcaption>
+                                    <h2>Crystalline</h2>
+                                    <p>Soko radicchio bunya nuts gram dulse.</p>
+                                    <button>View</button>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </li>
+                    <li  class="wow fadeInRightBig grid col-md-3 col-sm-6 col-xs-12">
+                        <a href="javascript:;" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                            <figure>
+                                <img src="img/team/4.png" />
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+                                <figcaption>
+                                    <h2>Crystalline</h2>
+                                    <p>Soko radicchio bunya nuts gram dulse.</p>
+                                    <button>View</button>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--优势部分-->
+    <section id="benefits">
+        <div class="container">
+            <div class="col-md-12">
+
+                <div class="benefits wow bounce add-bottom">
+                    <h2>我们的优势<span>告诉我们你想要的网页，只要你能想到的，没有我们做不到的</span></h2>
+                    <div class="divider add-bottom"></div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="list wow bounceInLeft">
+                        <img class="flat-icons" src="img/icons/pc-icons.png" alt="html5">
+                        <h5>友乐在哪些场景能帮到你</h5>
+                        <p>
+
+                            哪怕只有一个想法一张纸，快乐格子交给您一个成熟稳定的APP产品。
+
+                            提供包含设计、开发、测试、项目管理完整。
+
+                            提供成熟、专业的团队。</p>
+                    </div>
+
+                    <div class="list wow bounceInLeft">
+                        <img class="flat-icons" src="img/icons/flag-icons.png" alt="html5">
+                        <h5>5年专注开发，287个项目成功上线</h5>
+                        <p>中国500强公司华为、乐视、药明康德深度合作APP开发商。有这丰富的经验，可以让您的产品快速迭代，快速上线。</p>
+                    </div>
+
+                    <div class="list wow bounceInLeft">
+                        <img class="flat-icons" src="img/icons/search-icons.png" alt="html5">
+                        <h5>丰富的创业创新案例库</h5>
+                        <p>覆盖互联网+、医疗健康、电子商务、教育培训、金融房地产、社区聊天、休闲娱乐、企业服务
+                            媒体出版等行业
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 wow bounceIn" style="margin-top:-30px;">
+                    <img src="img/phones/3.png" class="img-responsive center" alt="html5">
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="list wow bounceInRight">
+                        <img class="flat-icons" src="img/icons/rocket-icons.png" alt="html5">
+                        <h5>年轻激情的团队</h5>
+                        <p>这是一支年轻有活力的团队，创新思维活跃，来自各个大公司组成的团队，技术能力强，工作经验丰富。</p>
+                    </div>
+
+                    <div class="list wow bounceInRight">
+                        <img class="flat-icons" src="img/icons/coffee-icons.png" alt="html5">
+                        <h5>完善的售后服务</h5>
+                        <p>不能正常访问、功能出现错误、后台内容修改、后台服务器管理，为您提供7×12小时售前、售中、售后或其他技术咨询。</p>
+                    </div>
+
+                    <div class="list wow bounceInRight">
+                        <img class="flat-icons" src="img/icons/papers-icons.png" alt="html5">
+                        <h5>六大增值服务</h5>
+                        <p>专家顾问式咨询、赠送产品运营手册、免费备案、提供基础的推广培训，推荐成熟的硬件和网络方案。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </section>
+
+    <!--视频部分-->
+    <section id="video">
+        <div class="wow ">
+            <div class="video-bg " style="padding-top:60px;">
+            <a class="popup-vimeo" href="video/fun.mp4"><i class="play-icon fa-play-circle-o fa-3x"></i></a>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </section>
+    <div style="padding-top: 80px"></div>
+
+    <section id="screenshots">
+        <div class="container">
+            <div class="main">
+                <div id="ac-wrapper" class="ac-wrapper">
+                    <h2>APPS IMAGES <span>Concept &amp; UI Design</span></h2>
+                    <div class="ac-device">
+                        <a href="#"><img src="img/screenshots/1.jpg" alt="screenshots"></a>
+                        <h3 class="ac-title">Gentrify small batch umami retro vegan</h3>
+                        <nav>
+                            <p>Click to toggle between single and grid view.</p>
+                            <span>&lt;</span>
+                            <span>&gt;</span>
+                        </nav>
+                    </div>
+                    <div class="ac-grid">
+                        <a href="#"><img src="img/screenshots/1.jpg" alt="img1"><span>Line-icons for Design</span></a>
+                        <a href="#"><img src="img/screenshots/2.jpg" alt="img1"><span>Download Page Screenshot</span></a>
+                        <a href="#"><img src="img/screenshots/3.jpg" alt="img1"><span>Video Plugin Supported</span></a>
+                        <a href="#"><img src="img/screenshots/4.jpg" alt="img1"><span>Mobile Menu UI Design</span></a>
+                        <a href="#"><img src="img/screenshots/5.jpg" alt="img1"><span>Team Page in Mobile View</span></a>
+                        <a href="#"><img src="img/screenshots/6.jpg" alt="img1"><span>Simple Design For Apps</span></a>
+                        <a href="#"><img src="img/screenshots/7.jpg" alt="img1"><span>Subscription/ Newsletter</span></a>
+                        <a href="#"><img src="img/screenshots/8.jpg" alt="img1"><span>Cool Screenshots Page</span></a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /container -->
+        <div style="clear: both;"></div>
+    </section>
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+
+
+    <script type="text/javascript" src="js/appshowcase_3.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/dist/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+
+    <!--<script type="text/javascript" src="js/SmoothScroll.js"></script>-->
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="js/toucheffects.js"></script>-->
+    <!--<script type="text/javascript" src="js/plugins.js"></script>-->
+    <script type="text/javascript" src="js/snap.svg-min.js"></script>
+    <script type="text/javascript" src="js/my.js"></script>
+
+
+</body>
+</html>

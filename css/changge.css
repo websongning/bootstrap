@@ -1,0 +1,74 @@
+@media (max-width: 970px) {
+    .navigation .navbar-nav{
+        text-align: center;
+        color: #fff;
+    }
+    .navigation .navbar-nav > li > a  {
+        display: block;
+        height: auto;
+        width: 100%;
+        padding: 0 20px;
+        color: #555555;
+        border-top: 1px solid #fff;
+        line-height: 40px;
+    }
+    .navigation .navbar-nav > .active > a{
+        background-color: #eee;
+    }
+
+
+
+}
+
+
+
+
+/*===============max768==================*/
+@media (max-width: 768px) {
+    #team .teamImg{
+        overflow: hidden;
+    }
+    #team .teamImg li {
+        /*display: block;*/
+        width: 247px;
+        height: 372px;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .ac-wrapper {
+        padding: 0 20px 100px;
+    }
+    .ac-wrapper h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom:20px ;
+        padding: 0;
+        top: 0;
+        left: auto;
+        position: relative;
+    }
+    .ac-device {
+        margin: 0 auto;
+        width: 288px;}
+
+    .ac-device h3 {
+        position: relative;
+        margin: 0;
+        left: auto;
+        top: auto;
+        width: 100%;
+        padding-top: 100px;
+        display: block;
+        text-align: center;}
+
+    .ac-device nav {
+        position: relative;
+        padding-top: 20px;
+        text-align: center;
+        bottom: auto;
+        margin: 0;
+        left: auto;}
+}
+
+}
